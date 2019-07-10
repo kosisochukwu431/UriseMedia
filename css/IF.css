@@ -9,3 +9,296 @@ nav {
 .nav_bar ul li a {
 	color: white;	
 }
+
+.introduceIF {
+	display: block;
+	height: 100vh;
+	background-color: transparent;
+	font-family: 'Leelawadee UI'; 
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.aboutIF {
+	background-color: black;
+	display: block;
+	height: 90%;
+	position: relative;
+}
+
+.influencers {
+	position: relative;
+	height: 500vh;
+	background-color: black;
+}
+
+.multiuse_circle_influencers {
+	background-color: #332d2d;
+	top: 1.5%;
+	left: 5%;
+	height: 170px;
+	width: 170px;
+}
+
+.featured {
+	position: absolute;
+	top: 3%;
+	left: 10%;
+}
+
+.featured p {
+	font-size: 40px;
+	font-weight: bold;
+	color: #91989e;
+	margin: 0; 
+}
+
+.contentline_IF {
+	width: 300px;
+	margin: 16px 0px;
+}
+
+.IF_bg {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	background-color: #090f11;
+	height: 88%;
+	width: 40%;
+}
+
+
+
+
+
+
+/*influencer content*/
+
+/*influencer images*/
+.influencer_image {
+	position: absolute;
+	height: 9%;
+	width: 22%;
+	background-color: white;
+	background-size: 100% 100%;
+}
+
+.influencer_image1 {
+	background-image: url("../images/influencer6.png");
+	margin-top: 20%;
+	margin-left: 28%;
+}
+
+.influencer_image2 {
+	background-image: url("../images/influencer1.png");
+	margin-top: 46%;
+	margin-left: 56%;
+}
+
+.influencer_image3 {
+	background-image: url("../images/influencer5.png");
+	margin-top: 55%;
+	margin-left: 20%;
+}
+
+.influencer_image4 {
+	background-image: url("../images/influencer8.png");
+	margin-top: 80%;
+	margin-left: 45%;
+}
+
+.influencer_image5 {
+	background-image: url("../images/influencer2.png");
+	margin-top: 115%;
+	margin-left: 20%;
+}
+
+.influencer_image6 {
+	background-image: url("../images/influencer9.png");
+	margin-top: 130%;
+	margin-left: 60%;
+}
+
+.influencer_image7 {
+	background-image: url("../images/influencer10.png");
+	margin-top: 150%;
+	margin-left: 25%;
+}
+
+.influencer_image8 {
+	background-image: url("../images/influencer3.png");
+	margin-top: 170%;
+	margin-left: 59%;
+}
+
+.influencer_image9 {
+	background-image: url("../images/influencer4.png");
+	margin-top: 190%;
+	margin-left: 20%;
+}
+
+.influencer_image10 {
+	background-image: url("../images/influencer11.png");
+	margin-top: 200%;
+	margin-left: 63%;
+}
+
+.influencer_image11 {
+	background-image: url("../images/influencer7.png");
+	margin-top: 220%;
+	margin-left: 32%;
+}
+
+/*letter*/
+.name_first_alpha {
+	font-size: 450px;
+	position: absolute;
+	color: white;
+}
+
+.name_first_alpha1 {
+	margin-top: 19%;
+	margin-left: 20%;
+	color: #f3e55b; /*yellow*/
+}
+
+.name_first_alpha2 {
+	margin-top: 28%;
+	margin-left: 65%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha3 {
+	margin-top: 55%;
+	margin-left: 35%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha4 {
+	margin-top: 85%;
+	margin-left: 60%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha5 {
+	margin-top: 100%;
+	margin-left: 30%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha6 {
+	margin-top: 130%;
+	margin-left: 50%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha7 {
+	margin-top: 150%;
+	margin-left: 15%;
+	color: #db464b; /*red*/
+}
+
+
+.name_first_alpha8 {
+	margin-top: 160%;
+	margin-left: 50%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha9 {
+	margin-top: 180%;
+	margin-left: 37%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha10 {
+	margin-top: 200%;
+	margin-left: 75%;
+	color: #db464b; /*red*/
+}
+
+.name_first_alpha11 {
+	margin-top: 210%;
+	margin-left: 20%;
+	color: #db464b; /*red*/
+}
+
+
+
+
+/*name div*/
+.name_div {
+	position: absolute;
+	color: #f3e55b; 
+	font-size: 30px;
+	line-height: 25px;
+}
+
+.name_div p {
+	margin-bottom: 10px;
+}
+
+.contentline_name {
+	width: 140%;
+	height: 2px;
+}
+
+.contentline_name1 {
+	background-color: #f3e55b;
+}
+
+
+.name_div1 {
+	top: 10%;
+	left: 51%;
+}
+
+.name_div2 {
+	top: 28%;
+	left: 56%;
+}
+
+.name_div3 {
+	top: 22%;
+	left: 10%;
+}
+
+.name_div4 {
+	top: 32%;
+	left: 69%;
+}
+
+.name_div5 {
+	top: 53%;
+	left: 43%;
+}
+
+.name_div6 {
+	top: 49.5%;
+	left: 71%;
+}
+
+.name_div7 {
+	top: 69.5%;
+	left: 31%;
+}
+
+.name_div8 {
+	top: 66%;
+	left: 61%;
+}
+
+.name_div9 {
+	top: 80%;
+	left: 10%;
+}
+
+.name_div10 {
+	top: 82%;
+	left: 50%;
+}
+
+.name_div11 {
+	top: 90%;
+	left: 55%;
+}
