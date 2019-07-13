@@ -1,0 +1,20 @@
+
+.content_IF p:nth-child(1) {
+	font-size: 6rem;
+}
+
+.content_IF p:nth-child(2) {
+	font-size: 6rem;
+}
+
+.introduceIF {
+	height: 67vh;
+}
+
+.strategy_name {
+	margin-top: 10px;
+}
+
+.strategy_descrp {
+	width: 70%;	
+}

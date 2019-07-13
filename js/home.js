@@ -109,19 +109,15 @@ function button_click() {
 	function removetextanime() {
 	text_section[0].classList.remove('text_animation');
 
-	setTimeout(removeanime1,1000);
-	setTimeout(removeanime2,1100);
-	setTimeout(removeanime3,1300);
-
 	if(i==1) {
 		indicator[0].style.backgroundColor = 'transparent';
 		indicator[1].style.backgroundColor = '#048ba8';
 		indicator[2].style.backgroundColor = 'transparent';
 		alpha1[0].innerHTML = info[1].alphabet1;
 		alpha2[0].innerHTML = info[1].alphabet2;
-		setTimeout(picchange11,500);
-		setTimeout(picchange12,600);
-		setTimeout(picchange13,800);
+		setTimeout(picchange11,0);
+		setTimeout(picchange12,0);
+		setTimeout(picchange13,0);
 
 		function picchange11() {
 			image1[0].style.backgroundImage= info[1].image1;
@@ -135,7 +131,7 @@ function button_click() {
 			image3[0].style.backgroundImage= info[1].image3;
 		}		
 
-		setTimeout(text_animate,500);
+		setTimeout(text_animate,100);
 
 		function text_animate() {
 		banner[0].innerHTML = info[1].banner;
@@ -214,6 +210,10 @@ function button_click() {
 		}
 		i++;
 	}
+
+	setTimeout(removeanime1,1000);
+	setTimeout(removeanime2,1100);
+	setTimeout(removeanime3,1300);
 
 }	
 }
