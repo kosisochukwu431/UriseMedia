@@ -1,0 +1,113 @@
+@media screen and (max-width: 768px) {
+
+	nav {
+		background-color: black;
+		position: relative;
+	}
+
+	.hamberger_line {
+		width: 40px;
+		height: 4px;
+		background-color: white;
+		margin: 7px; 
+	}
+
+	.hamberger {
+		position: absolute;
+		right: 0%;
+		transform: translate(-50%,-50%);
+		top: 50%;
+		z-index: 30;
+		cursor: pointer;
+	}
+
+	.nav_links {
+		position: fixed;
+		background-color: blue;
+		height: 100vh;
+		width: 100%;
+		top: 0%;
+		left: 0%;
+		z-index: 20;
+		flex-direction: column;
+		clip-path: circle(32px at 88% -10%);
+		-webkit-clip-path: circle(32px at 88% -10%);
+		transition: all 0.7s ease-in-out;
+		pointer-events: none;
+	}
+
+	.nav_links.open {
+		clip-path: circle(800px at 88% 7%);
+		-webkit-clip-path: circle(800px at 88% 7%);
+		pointer-events: all;
+	}
+
+	.load_circle {
+		height: 40px;
+		width: 40px;
+	}
+
+	.banner {
+		font-size: 10px;
+	}
+
+	.service_name {
+		font-size: 40px;
+	}
+
+	.landing_sec_3 {
+		display: none;
+	}
+
+	.landing12 {
+		width: 100%;
+	}
+
+	.tagline {
+		height: 100vh;
+		background-image: url("../images/Path3.png"); 
+	}
+
+	.tagline p {
+		height: auto;
+		text-align: center;
+		padding: 2%;
+	}
+
+	.three_sections {
+		flex-direction: column;
+		height: 300vh;
+	}
+
+	.section_box:hover {
+		height: 100vh;
+	}
+
+	.multiuse_circle {
+		height: 100px;
+		width: 100px;
+	}
+
+	footer {
+		padding: 20%;
+	}
+
+	.links {
+		width:50%;
+		margin-bottom: 5%;
+	}
+
+	.footer_menu {
+		display: block;
+		padding: 3% 0%;
+	}
+
+	.footer_item {
+		font-weight: normal;
+		padding: 1%;
+	}
+
+	.copyright p {
+		padding: 5% 0%;
+	}
+}

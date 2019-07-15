@@ -7,6 +7,17 @@ function remove_loader() {
 	loader.style.display = 'none';
 }
 
+
+
+//hamberger menu
+var hamberger = document.getElementsByClassName('hamberger');
+var nav_links = document.getElementsByClassName('nav_links');
+hamberger[0].addEventListener('click', function() {
+	nav_links[0].classList.toggle('open');
+});
+
+
+
 // Landing page
 
 var i = 1;
@@ -108,6 +119,7 @@ function button_click() {
 
 	function removetextanime() {
 	text_section[0].classList.remove('text_animation');
+	}
 
 	if(i==1) {
 		indicator[0].style.backgroundColor = 'transparent';
@@ -216,7 +228,6 @@ function button_click() {
 	setTimeout(removeanime3,1300);
 
 }	
-}
 
 
 // Text Appear Animation

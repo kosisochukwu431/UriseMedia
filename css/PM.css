@@ -1,0 +1,32 @@
+.intro_content_IF {
+	width: 90%;
+}
+
+.PM_flex {
+	display: flex;
+	height: 70vh;
+	padding: 0% 7% 5% 7%;
+	background-color: transparent;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.PM_flex_box {
+	flex: 200px; 
+}
+
+.PM_flex_box1 {
+	background: url("../images/decor1.jpg");
+}
+
+.PM_flex_box2 {
+	background: url("../images/decor1.jpg");
+}
+
+.PM_flex_box3 {
+	background: url("../images/decor1.jpg");
+}
+
+.PM_flex_box4 {
+	background: url("../images/decor1.jpg");
+}
