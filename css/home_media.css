@@ -17,19 +17,20 @@
 		right: 0%;
 		transform: translate(-50%,-50%);
 		top: 50%;
-		z-index: 30;
+		z-index: 20;
 		cursor: pointer;
 	}
 
 	.nav_links {
 		position: fixed;
-		background-color: blue;
+		background-color: #63a8b8;
 		height: 100vh;
 		width: 100%;
 		top: 0%;
 		left: 0%;
-		z-index: 20;
+		z-index: 10;
 		flex-direction: column;
+		justify-content: center;
 		clip-path: circle(32px at 88% -10%);
 		-webkit-clip-path: circle(32px at 88% -10%);
 		transition: all 0.7s ease-in-out;
@@ -42,9 +43,48 @@
 		pointer-events: all;
 	}
 
+	.nav_links li {
+		font-size: 40px;
+		margin: 2% 0%; 
+		background-color: transparent;
+		color: transparent;
+		font-weight: bold;
+		-webkit-text-stroke: 1px white;
+	} 
+
+	.nav_bar ul li a {
+		color: transparent;
+		font-weight: bold;
+		-webkit-text-stroke: 1px white;
+	}
+
+	.contact_button {
+		margin: 0;
+		color: transparent;
+		font-weight: bold;
+		-webkit-text-stroke: 1px white;
+	}
+
+	.nav_bar ul li:last-child a {
+		color: transparent;
+		font-weight: bold;
+		-webkit-text-stroke: 1px white;
+	}
+
+	.service_link_each {
+		font-size: 30px;
+		-webkit-text-stroke: 1px white;
+	}
+
+	.service_link_each a p {
+		color: transparent;
+    	-webkit-text-stroke: 1px white;
+    	padding: 4% 0%;
+	}
+
 	.load_circle {
-		height: 40px;
-		width: 40px;
+		height: 30px;
+		width: 30px;
 	}
 
 	.banner {
@@ -79,8 +119,12 @@
 		height: 300vh;
 	}
 
+	.section_box {
+		height: 80vh;
+	}	
+
 	.section_box:hover {
-		height: 100vh;
+		height: auto;
 	}
 
 	.multiuse_circle {

@@ -96,7 +96,62 @@ nav {
 	opacity: 0.8;
 }
 
+.service_links {
+	position: fixed;
+	background-color: #ee696e;
+	height: 100vh;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	z-index: 20;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clip-path: circle(0px at 80% 5%);
+/*	-webkit-clip-path: circle(32px at 88% -10%);*/
+	transition: all 0.7s ease-in-out;
+	pointer-events: none;
+}
 
+.service_links.open {
+	clip-path: circle(1300px at 80% 5%);
+	/*-webkit-clip-path: circle(800px at 88% 7%);*/
+	pointer-events: all;
+}
+
+.inside_service_links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service_link_each {
+	font-size: 80px;
+	font-weight: bold;
+}
+
+.service_link_each a p {
+	color: transparent;
+	-webkit-text-stroke: 2.5px white; 
+}
+
+.service_link_each a p:hover {
+	opacity: 0.5;
+	transform: translateX(5%);
+	transition: transform 0.5s ease-in-out;
+}
+
+.fa-times {
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	top: 5%;
+	right: 4%;
+}
+
+.fa-times:hover {
+	opacity: 0.5;
+}
 
 
 
@@ -123,6 +178,7 @@ when the website opens)*/
 	flex: 1;
 	display: grid;
 	align-items: center;
+	padding: 0% 5%;
 }
 
 .trasition_circle {
@@ -154,6 +210,7 @@ when the website opens)*/
 	display: grid;
 	flex-direction: column;
 	align-items: center;
+	padding: 15% 0% 15% 5%;
 }
 
 .text_animation {
@@ -167,11 +224,11 @@ when the website opens)*/
 
 .service_info {
 	flex: 1;
-	margin-top: 10%;
+	margin: 10% 0%;
 }
 
 .banner {
-	font-size: 40px;
+	font-size: 45px;
 	font-family: 'Mistral';
 	color: #99c24d;
 }
@@ -180,7 +237,7 @@ when the website opens)*/
 	font-size: 80px;
 	color: transparent;
 	font-weight: bold;
-	-webkit-text-stroke: 3px #048ba8;
+	-webkit-text-stroke: 4px #048ba8;
 	line-height: 60px;
 }
 
@@ -230,38 +287,33 @@ when the website opens)*/
 	height: 90%;
 	width: 50%;
 	position: absolute;
-	left: 600px;
-	top: 50px;
-	z-index: -4;
+	right: 5%;
+	top: 5%;
 }
 
 .landingimg1 {
 	width: 300px;
 	height: 350px;
 	position: absolute;
-	top: 140px;
+	top: 25%;
 	z-index: 3;
-	margin: 0px;
-	padding: 0px;
 	overflow: hidden;
 }
 
 .inside_landingimg1 {
 	background: url("../images/business1.png");
-	background-size: 300px 350px;
-	width: 300px;
-	height: 350px;
-	margin: 0px;
-	padding: 0px;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
 	/*animation: image_1_anime 1s ease-in;*/
 }
 
 .betline1 {
-	height: 470px;
+	height: 92%;
 	width: 2px;
 	background-color: #707070;
 	position: absolute;
-	top: 0px;
+	top: 0%;
 	left: 298px;
 	z-index: 10;
 }
@@ -270,31 +322,26 @@ when the website opens)*/
 	width: 300px;
 	height: 350px;
 	position: absolute;
-	top: 0px;
+	top: 0%;
 	left: 298px;
 	z-index: 5;
 	overflow: hidden;
-	margin: 0px;
-	padding: 0px;
-	background-color: white;
 }
 	
 .inside_landingimg2 {
 	background-image: url("../images/business2.png");
-	background-size: 300px 350px;
-	width: 300px;
-	height: 350px;
-	margin: 0px;
-	padding: 0px;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
 	/*animation: image_2_anime 1s ease-in 0.1s;*/
 }
 
 .betline2 {
-	height: 530px;
+	height: 105%;
 	width: 2px;
 	background-color: #707070;
 	position: absolute;
-	top: -30px;
+	top: -5%;
 	left: 550px;
 	z-index: 10;
 }
@@ -304,7 +351,7 @@ when the website opens)*/
 	width: 150px;
 	height: 350px;
 	position: absolute;
-	top: 0px;
+	top: 0%;
 	left: 550px;
 	background-color: white;
 	z-index: 6;
@@ -314,18 +361,17 @@ when the website opens)*/
 	width: 120px;
 	height: 300px;
 	position: absolute;
-	top: 150px;
+	top: 35%;
 	left: 550px;
 	z-index: 7;
 	overflow: hidden;
-	background-color: white;
 }
 
 .inside_landingimg3 {
 	background-image: url("../images/business3.png");
-	background-size: 120px 300px;
-	height: 300px;
-	width: 120px;
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
 	/*animation: image_3_anime 1s ease-in 0.05s;*/
 }
 
@@ -736,6 +782,10 @@ when the website opens)*/
 	left: 85%;
 }
 
+.content5 {
+	padding: 3% 0%;
+}
+
 .background_div {
 	position: absolute;
 	height: 100%;
@@ -772,6 +822,21 @@ when the website opens)*/
 	margin-top: 3vw;	
 }
 
+.good_at {
+	position: absolute;
+	bottom: -5%;
+	z-index: 30;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,0%);
+}
+
+.good_at p {
+	font-size: 100px;
+	line-height: 80px;
+	color: transparent;
+	-webkit-text-stroke: 3px white;
+}
 
 
 /*The three main services*/

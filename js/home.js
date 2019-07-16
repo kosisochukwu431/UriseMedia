@@ -17,10 +17,21 @@ hamberger[0].addEventListener('click', function() {
 });
 
 
+//service menu
+var service_menu = document.getElementsByClassName('service_menu');
+var service_links = document.getElementsByClassName('service_links');
+service_menu[0].addEventListener('click', function() {
+	service_links[0].classList.toggle('open');
+});
+
+
+function toggle_service_menu() {
+	service_links[0].classList.toggle('open');
+}
 
 // Landing page
 
-var i = 1;
+var i = 0;
 var image1 = document.getElementsByClassName('inside_landingimg1');
 var image2 = document.getElementsByClassName('inside_landingimg2');
 var image3 = document.getElementsByClassName('inside_landingimg3');
@@ -39,7 +50,7 @@ var info = [
 			{
 			banner: "Keeping an Ear to the Ground",
 			service: "Influencer<br>Marketing",
-			link: "Influencer_marketing.html",
+			link: "influencer_marketing.html",
 			image1: "url('images/pencil1.png')",
 			image2: "url('images/pencil2.png')",
 			image3: "url('images/pencil3.png')",
@@ -102,13 +113,14 @@ trigger_section_change[0].addEventListener('click',button_click);
 
 function button_click() {
 
-	var indicator = document.getElementsByClassName('circle');
+	i++;
+	var indicator = document.getElementsByClassName('trasition_circle');
 	var banner = document.getElementsByClassName('banner');
 	var service_name = document.getElementsByClassName('service_name');
-	var service_link = document.getElementsByClassName('service_link');
+	var service_link = document.getElementsByClassName('service_link_url');
 	var alpha1 = document.getElementsByClassName('alpha1');
 	var alpha2 = document.getElementsByClassName('alpha2');
-	var text_section = document.getElementsByClassName('landing_sec_2');
+	var text_section = document.getElementsByClassName('service_info');
 
 	image1[0].classList.add('animation1');
 	image2[0].classList.add('animation2');
@@ -127,9 +139,6 @@ function button_click() {
 		indicator[2].style.backgroundColor = 'transparent';
 		alpha1[0].innerHTML = info[1].alphabet1;
 		alpha2[0].innerHTML = info[1].alphabet2;
-		setTimeout(picchange11,0);
-		setTimeout(picchange12,0);
-		setTimeout(picchange13,0);
 
 		function picchange11() {
 			image1[0].style.backgroundImage= info[1].image1;
@@ -141,9 +150,7 @@ function button_click() {
 
 		function picchange13() {
 			image3[0].style.backgroundImage= info[1].image3;
-		}		
-
-		setTimeout(text_animate,100);
+		}	
 
 		function text_animate() {
 		banner[0].innerHTML = info[1].banner;
@@ -151,7 +158,10 @@ function button_click() {
 		service_link[0].href = info[1].link;
 		}
 
-		i++;
+		setTimeout(text_animate,200);
+		setTimeout(picchange11,500);
+		setTimeout(picchange12,600);
+		setTimeout(picchange13,800);
 	}
 
 	else if(i==2) {
@@ -160,9 +170,6 @@ function button_click() {
 		indicator[2].style.backgroundColor = '#048ba8';
 		alpha1[0].innerHTML = info[2].alphabet1;
 		alpha2[0].innerHTML = info[2].alphabet2;
-		setTimeout(picchange21,500);
-		setTimeout(picchange22,600);
-		setTimeout(picchange23,800);
 
 		function picchange21() {
 			image1[0].style.backgroundImage= info[2].image1;
@@ -176,17 +183,20 @@ function button_click() {
 			image3[0].style.backgroundImage= info[2].image3;
 		};		
 
-		setTimeout(text_animate,500);
-
 		function text_animate() {
 		banner[0].innerHTML = info[2].banner;
 		service_name[0].innerHTML = info[2].service;
 		service_link[0].href = info[2].link;
 		}
-		i=0;
+
+		setTimeout(text_animate,500);
+		setTimeout(picchange21,500);
+		setTimeout(picchange22,600);
+		setTimeout(picchange23,800);
+		i= -1;
 	}
 
-	else {
+	else if(i==0) {
 		indicator[0].style.backgroundColor = '#048ba8';
 		indicator[1].style.backgroundColor = 'transparent';
 		indicator[2].style.backgroundColor = 'transparent';
@@ -196,9 +206,6 @@ function button_click() {
 		image3[0].style.backgroundImage = info[0].image3;
 		alpha1[0].innerHTML = info[0].alphabet1;
 		alpha2[0].innerHTML = info[0].alphabet2;
-		setTimeout(picchange01,200);
-		setTimeout(picchange02,700);
-		setTimeout(picchange03,800);
 
 		function picchange01() {
 			image1[0].style.backgroundImage= info[0].image1;
@@ -212,15 +219,16 @@ function button_click() {
 			image3[0].style.backgroundImage= info[0].image3;
 		};	
 
-
-		setTimeout(text_animate,500);
-
 		function text_animate() {
 		banner[0].innerHTML = info[0].banner;
 		service_name[0].innerHTML = info[0].service;
 		service_link[0].href = info[0].link;
 		}
-		i++;
+
+		setTimeout(text_animate,500);
+		setTimeout(picchange01,500);
+		setTimeout(picchange02,700);
+		setTimeout(picchange03,800);
 	}
 
 	setTimeout(removeanime1,1000);
@@ -237,6 +245,7 @@ function scrollmove() {
 	scrollmove1();
 	scrollmove2();
 	scrollmove3();
+	scrollmove4();
 	imageappear1();
 }
 
@@ -276,6 +285,17 @@ function scrollmove3() {
 	}
 }
 
+function scrollmove4() {
+	var text_appear4 = document.getElementsByClassName("content5");
+	var introposition3 = text_appear4[0].getBoundingClientRect().top;
+	var screenposition3 = window.innerHeight;
+
+	if(introposition3<screenposition3/1.4)
+	{		
+		text_appear4[0].classList.add('intro-appear');
+	}
+}
+
 function imageappear1() {
 	var image_div1 = document.getElementsByClassName("contentimage31");
 	var introposition4 = image_div1[0].getBoundingClientRect().top;
@@ -306,10 +326,17 @@ function parallax_image2() {
   about2_image2[0].style.top = 10+move2 + "%"; 
 }
 
+function parallax_circle2() {
+    var about2_image2 = document.getElementsByClassName("multiuse_circle3");
+  var move2 = 0-window.pageYOffset/50;  
+  about2_image2[0].style.top = 70+move2 + "%"; 
+}
+
 window.addEventListener("scroll", function(){
     parallax1();
     parallax_image1(); 
     parallax_image2();
+    parallax_circle2();
 });
 
 
@@ -362,3 +389,10 @@ function movedown_text3() {
 section[0].addEventListener('mouseleave', movedown_text1);
 section[1].addEventListener("mouseleave", movedown_text2);
 section[2].addEventListener("mouseleave", movedown_text3);
+
+// section_box p color change on hover
+var section_heading = document.getElementsByClassName('section_heading');
+var section_descr = document.getElementsByClassName('section_descr');
+var section_box = document.getElementsByClassName('section_box');
+
+
