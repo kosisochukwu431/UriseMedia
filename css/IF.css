@@ -3,8 +3,7 @@ html {
 }
 
 nav {
-	background-color: rgba(0,0,0,0.5); 
-	z-index: 999;
+	background-color: black; 
 }
 
 .nav_bar ul li {
@@ -21,18 +20,13 @@ nav {
 
 
 /*landing*/
-.bgdiv {
-	background-color: black;
-	background-size: 100% 200%;
-	background-position: 0% 80%;
-}
 
 /*introduction to Influencer Marketing*/
 .introduceIF {
 	display: block;
 	height: 90vh;
 	width: 100%;
-	background-color: rgba(0,0,0,0.5); 
+	background-color: black; 
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -55,18 +49,18 @@ nav {
 }
 
 .content_IF p:first-child {
-	font-size: 5rem;
+	font-size: 100px;
 	color: transparent;
-	line-height: 3.5rem;
+	line-height: 90px;
 	margin-top: 0;
 	margin-bottom: 0;
 	-webkit-text-stroke: 2px #ea7a7f;
 }
 
 .content_IF p:nth-child(2) {
-	font-size: 5rem;
+	font-size: 100px;
 	color: transparent;
-	line-height: 4rem;
+	line-height: 90px;
 	margin: 0 0 0 40%; 
 	-webkit-text-stroke: 2px white;
 }
@@ -94,6 +88,7 @@ nav {
 	position: relative;
 	height: 500vh;
 	background-color: black;
+	overflow: hidden;
 }
 
 .multiuse_circle_influencers {
@@ -412,26 +407,3 @@ nav {
 	left: 55%;
 }
 
-
-
-
-
-
-
-
-
-/*media queries*/
-@media mobile and (max-width: 320px) {
-
-html {
-	width: 100%;
-}
-
-.content_IF p:first-child {
-	font-size: 2rem;
-}
-
-
-
-
-}

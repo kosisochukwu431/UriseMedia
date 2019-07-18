@@ -1,14 +1,14 @@
 @media screen and (max-width: 768px) {
 
 	nav {
-		background-color: black;
+		background-color: transparent;
 		position: relative;
 	}
 
 	.hamberger_line {
 		width: 40px;
 		height: 4px;
-		background-color: white;
+		background-color: #63a8b8;
 		margin: 7px; 
 	}
 
@@ -82,17 +82,36 @@
     	padding: 4% 0%;
 	}
 
+	.landing {
+		display: flex;
+		height: 90vh;
+	}
+
+	.landing_sec_1 {
+		padding: 0% 3%;
+		flex: none;
+	}
+
 	.load_circle {
 		height: 30px;
 		width: 30px;
 	}
 
 	.banner {
-		font-size: 10px;
+		font-size: 32px;
+    	padding: 5% 0%;
 	}
 
 	.service_name {
-		font-size: 40px;
+		font-size: 47px;
+	}
+
+	.service_link a {
+		font-size: 15px;
+	}
+
+	.service_link {
+		padding: 5% 0%;
 	}
 
 	.landing_sec_3 {
@@ -104,14 +123,72 @@
 	}
 
 	.tagline {
-		height: 100vh;
+		height: 40vh;
 		background-image: url("../images/Path3.png"); 
 	}
 
 	.tagline p {
-		height: auto;
 		text-align: center;
-		padding: 2%;
+		font-size: 25px;
+    	margin: 0% 5%;
+	}
+
+	.about1 {
+		height: 150vh;
+	}
+
+	.content_image1 {
+		height: 300px;
+		width: 100%;
+		top: 8%;
+	}
+
+	.content1 {
+	    width: 100%;
+    	top: 45%;
+	}
+
+	.multiuse_circle1 {
+		margin-top: 141vw;
+	}
+
+
+	.about2 {
+		height: 150vh;
+	}
+
+	.content_image21 {
+		height: 400px;
+		width: 100%;
+	}
+
+	.content_image22 {
+		height: 160px;
+    	width: 80%;
+    	left: 10%;
+	}
+
+	.multiuse_circle2 {
+		margin-top: 86%;
+	}
+
+	.content2 {
+		width: 100%;
+		top: 60%;
+	}
+
+	.about3 p {
+		font-size: 18px;
+	}
+
+	.about4 {
+		height: 200vh;
+	}
+
+	.content3 {
+		width: 100%;
+    	padding: 5%;
+    	left: 0vw;
 	}
 
 	.three_sections {
@@ -127,10 +204,56 @@
 		height: auto;
 	}
 
+	.section_content:hover {
+		padding: 10%;
+	}
+
 	.multiuse_circle {
 		height: 100px;
 		width: 100px;
 	}
+
+	.content_image31 {
+		height: 300px;
+		width: 100%;
+	}
+
+	.multiuse_circle3 {
+		margin-left: 61vw;
+    	margin-top: 179vw
+    }
+
+    .content3 {
+    	top: 23%;
+    }
+
+    .good_at {
+    	bottom: 10%;
+    }
+
+    .good_at_this {
+    	display: block;
+    	position: absolute;
+    	bottom: 2%;
+    	left: 50%;
+    	transform: translateX(-50%); 
+    	text-align: center;
+    }
+
+    .good_at_this p{
+    	font-size: 15px;
+    	font-weight: normal;
+    	color: white;
+    } 
+
+    .three_sections {
+    	height: 1000px;
+    }
+
+    .section_box:hover {
+    	height: auto;
+    	flex: 3;
+    }
 
 	footer {
 		padding: 20%;
@@ -143,7 +266,7 @@
 
 	.footer_menu {
 		display: block;
-		padding: 3% 0%;
+		padding: 5% 0%;
 	}
 
 	.footer_item {

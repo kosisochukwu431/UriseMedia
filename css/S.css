@@ -1,9 +1,13 @@
-.bgdiv_S {
-	background-color: white/*#e5f5f0*/;
-}
-
 nav {
 	background-color: transparent;
+}
+
+.nav_bar ul li a {
+    color: black;
+}
+
+.nav_bar ul li {
+    color: black;
 }
 
 .introduceIF {

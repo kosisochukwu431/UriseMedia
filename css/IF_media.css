@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+	.introduceIF {
+		padding: 20% 5%;
+		height: 100vh;
+	}
+
+	.content_IF {
+		position: static;
+		transform: translate(0%,0%);
+	}
+
+	.content_IF p:nth-child(1), .content_IF p:nth-child(2)  {
+		font-size: 60px;
+		position: static;
+		line-height: 50px;
+	}
+
+	.contentline_IF1 {
+		width: 100%;
+		margin: 10% 0%;
+	}
+
+	.intro_content_IF {
+		width: 200%;
+		text-align: left;
+		margin-top: 25%;
+		margin-left: 10%;
+		transform: translate(0%,0%);
+	}
+
+	.featured p {
+		font-size: 36px;
+		line-height: 50px;
+	}
+
+	.multiuse_circle_influencers {
+		height: 150px;
+		width: 150px;
+	}
+
+	.IF_bg {
+		z-index: -1;
+	}
+
+	.influencer_image {
+		height: 150px;
+    	width: 150px;
+    	position: static;
+    	margin: 20% 3%;
+	}
+}
