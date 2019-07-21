@@ -1,4 +1,9 @@
 @media screen and (max-width: 768px) {
+
+	.hamberger_line {
+		background-color: white;
+	}
+
 	.introduceIF {
 		padding: 20% 5%;
 		height: 100vh;
@@ -38,14 +43,75 @@
 		width: 150px;
 	}
 
+	.influencers {
+		height: 3500px;
+	}
+
 	.IF_bg {
-		z-index: -1;
+		z-index: 0;
+	}
+
+	.influencer_image_flex {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50%;
+		position: absolute;
+		z-index: 5; 
 	}
 
 	.influencer_image {
 		height: 150px;
     	width: 150px;
     	position: static;
-    	margin: 20% 3%;
+    	margin: 50% 50%;
+	}
+
+	.influencer_image:nth-child(even) {
+		margin: 50% 100%; 
+	}
+
+	.name_first_alpha_flex {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 5%;
+		z-index: 2;
+	}
+
+	.name_first_alpha {
+    	font-size: 200px;
+    	position: static;
+    	margin: 20% 5%; 
+	}
+
+	.name_first_alpha:nth-child(even) {
+		margin: 20% 0% 20% 140%;
+	} 
+
+	.name_div_flex {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		margin-top: 0%;
+		width: 100vw;
+	} 
+
+	.name_div {
+		position: static;
+		font-size: 20px;
+		margin: 32% 10%;
+	}
+
+	.name_div1, .name_div3, .name_div5, .name_div7, .name_div9, .name_div11 {
+		margin: 32% 60%;
+	}
+
+	.name_div:first-child {
+		margin-top: 70%;
+	}
+
+	.contentline_name {
+		width: 100px;
+		height: 1px;
 	}
 }

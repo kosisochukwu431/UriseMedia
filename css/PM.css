@@ -4,29 +4,29 @@
 
 .PM_flex {
 	display: flex;
-	height: 70vh;
-	padding: 0% 7% 5% 7%;
+	padding: 5% 7%;
 	background-color: transparent;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 .PM_flex_box {
-	flex: 200px; 
+	width: 270px; 
+	height:270px;
 }
 
 .PM_flex_box1 {
-	background: url("../images/decor1.jpg");
+	background-color: #a0d099;
 }
 
 .PM_flex_box2 {
-	background: url("../images/decor1.jpg");
+	background-color: #ee696e;
 }
 
 .PM_flex_box3 {
-	background: url("../images/decor1.jpg");
+	background-color: #dbd9da;
 }
 
 .PM_flex_box4 {
-	background: url("../images/decor1.jpg");
+	background-color: #f9ee81;
 }
