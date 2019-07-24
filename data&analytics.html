@@ -14,31 +14,48 @@
 	<link rel="stylesheet" type="text/css" href="css/S.css">
 	<link rel="stylesheet" type="text/css" href="css/DA.css">
 </head>
-<body>
-<div class="bgdiv_S">
-	<!-- navigation bar -->
+
+<body onload="remove_loader()"> 
+
+<!-- Pre-loader -->
+	<div id="loader">
+		<div class="load_circle load_circle1"></div>
+		<div class="load_circle load_circle2"></div>
+		<div class="load_circle load_circle3"></div>
+	</div>
+
+
+<!-- navigation bar -->
 	<nav>
 		<div class="logo">
 			<div class="inside_logo"></div>
 		</div>
+		<div class="hamberger">
+			<div class="hamberger_line"></div>
+			<div class="hamberger_line"></div>
+			<div class="hamberger_line"></div>
+		</div>
 		<div class="nav_bar">
-			<ul>
+			<ul class="nav_links">
 				<li><a href="index.html">HOME</a></li>
-				<li>SERVICES<i class="fas fa-angle-down"></i>
-					<ul>
-						<li><a href="">STRATEGY</a></li>
-						<li><a href="">INFLUENCER MARKETING</a></li>
-						<li><a href="">VIDEO PRODUCTION</a></li>
-						<li><a href="">SOCIAL MEDIA MARKETING</a></li>
-						<li><a href="">PERFORMANCE MARKETING</a></li>
-						<li><a href="">CONTENT MARKETING</a></li>
-						<li><a href="">DATA & ANALYTICS</a></li>
-					</ul>
-				</li>
-				<li><button type="button" onclick="contact_open()">CONTACT</button></li>
+				<li class="service_menu">SERVICES<i class="fas fa-angle-down"></i></li>
+				<li class="contact_button"><a href="">CONTACT</a></li>
 			</ul>
 		</div>
+		<div class="service_links">
+			<div class="inside_service_links">
+				<div class="service_link_each"><a href="strategy.html"><p>Strategy</p></a></div>
+				<div class="service_link_each"><a href="influencer_marketing.html"><p>Influencer Marketing</p></a></div>
+				<div class="service_link_each"><a href="video_production.html"><p>Video Production</p></a></div>
+				<div class="service_link_each"><a href="social_media_marketing.html"><p>Social Media Marketing</p></a></div>
+				<div class="service_link_each"><a href="performance_marketing.html"><p>Performance Marketing</p></a></div>
+				<div class="service_link_each"><a href="content_marketing.html"><p>Content Marketing</p></a></div>
+				<div class="service_link_each"><a href="data&analytics.html"><p>Data & Analytics</p></a></div>
+			</div>
+			<div><i class="fas fa-times" onclick="toggle_service_menu()"></i></div>
+		</div>
 	</nav>
+
 
 <!-- about influencer marketing -->
 	<article class="introduceIF">
@@ -89,23 +106,23 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer align="center">
 		<div class="links">
 			<div><a href=""><i class="fab fa-facebook-square"></i></a></div>
 			<div><a href=""><i class="fab fa-twitter-square"></i></a></div>
 			<div><a href=""><i class="fab fa-instagram"></i></a></div>
 		</div>
-		<div>
-			<div class="footer_menu">
-				<div class="footer_item">HOME</div>
-				<div class="footer_item">SERVICES</div>
-				<div class="footer_item">BRANDS</div>
-				<div class="footer_item">CONTACT</div>
-			</div>
-			<div class="copyright">@Copyright| All Rights Reserved</div>
+		<div class="footer_menu">
+			<div class="footer_item">HOME</div>
+			<div class="footer_item">ABOUT</div>
+			<div class="footer_item">SERVICES</div>
+			<div class="footer_item">BRANDS</div>
+			<div class="footer_item">CONTACT</div>
 		</div>
+		<div class="copyright"><p>@Copyright | All Rights Reserved</p></div>
 	</footer>
-
 </div>
+
+<script src="js/preloader&nav.js"></script>
 </body>
 </html>

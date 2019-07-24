@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+	.introduceSMM {
+		height: 1000px;
+	}
+
+	.SMM_heading {
+		top: 2%;
+		text-align: left;
+		left: 2%;
+	}
+
+	.SMM_heading p {
+		font-size: 70px;
+	}
+}

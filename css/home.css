@@ -9,29 +9,12 @@ html {
 	box-sizing: border-box;
 }
 
-
-@font-face {
-	font-family: 'Tw cen MT'; 
-	src: url('../fonts/TCM_____.ttf');
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'Mistral'; 
-	src: url('../fonts/mistral.ttf');
-	font-style: normal;
-	font-weight: normal;
-}
-
-
 html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: 'Tw Cen MT', sans-serif;
- 	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'Josefin Sans', sans-serif;
 	cursor: arrow;
 }
 
@@ -244,16 +227,16 @@ when the website opens)*/
 
 .banner {
 	font-size: 45px;
-	font-family: 'Mistral', georgia;
 	color: #99c24d;
+	font-family: 'Shadows Into Light', cursive;
 }
 
 .service_name {
 	font-size: 80px;
 	color: transparent;
 	font-weight: bold;
-	-webkit-text-stroke: 4px #048ba8;
-	line-height: 60px;
+	-webkit-text-stroke: 2px #048ba8;
+	line-height: 70px;
 }
 
 .service_link a {
@@ -369,7 +352,7 @@ when the website opens)*/
 	top: 0%;
 	left: 550px;
 	background-color: white;
-	z-index: 6;
+	z-index: 5;
 }
 
 .landingimg3 {
@@ -416,19 +399,20 @@ when the website opens)*/
 }
 
 .secondalpha p{
-	font-size: 180px;
+	font-size: 150px;
 	width: 200px;
-	font-family: 'Informal Roman';
 	margin: 0px;
-	z-index: 6;
+	z-index: 7;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .firstalpha p {
-	font-size: 180px;
+	font-size: 150px;
 	width: 200px;
-	font-family: 'Informal Roman';
 	margin: 0px;
 	z-index: 4;
+	font-family: 'Kaushan Script', cursive;
+	font-weight: normal;
 }
 
 .firstalpha {
@@ -859,7 +843,6 @@ when the website opens)*/
 
 
 /*The three main services*/
-/*The three main services*/
 .three_sections {
 	display: flex;
 	height: 50vw;
@@ -941,8 +924,8 @@ when the website opens)*/
 }
 
 .section_descr p {
-	letter-spacing: -1px;
 	font-weight: bold;
+	font-size: 17px; 
 }
 
 .fa-long-arrow-alt-right {

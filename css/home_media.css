@@ -182,13 +182,18 @@
 	}
 
 	.about4 {
-		height: 200vh;
+		height: 145vh;
 	}
 
 	.content3 {
 		width: 100%;
     	padding: 5%;
     	left: 0vw;
+    	top: 28%;
+	}
+
+	.content5 {
+		padding: 20% 0%;
 	}
 
 	.three_sections {
@@ -221,10 +226,6 @@
 	.multiuse_circle3 {
 		margin-left: 61vw;
     	margin-top: 179vw
-    }
-
-    .content3 {
-    	top: 23%;
     }
 
     .good_at {
