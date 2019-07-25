@@ -82,6 +82,11 @@
     	padding: 4% 0%;
 	}
 
+
+	 .bg_div_LP {
+	 	display: grid;
+	 } 
+
 	.landing {
 		display: flex;
 		height: 90vh;

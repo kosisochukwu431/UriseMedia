@@ -1,11 +1,11 @@
 
-
 // Landing page
 
-var i = 0;
 var image1 = document.getElementsByClassName('inside_landingimg1');
 var image2 = document.getElementsByClassName('inside_landingimg2');
 var image3 = document.getElementsByClassName('inside_landingimg3');
+
+
 var info = [
 			{
 			banner: "An Eye for Detail",
@@ -41,28 +41,101 @@ var info = [
 			}
 ];
 
-image1[0].classList.add('startanimation1');
-image2[0].classList.add('startanimation2');
-image3[0].classList.add('startanimation3');
-setTimeout(removestartanime1,1000);
-setTimeout(removestartanime2,1500);
-setTimeout(removestartanime3,1400);
+
+function startanimation() {
+	
+	image1[0].classList.add('startanimation1');
+	image2[0].classList.add('startanimation2');
+	image3[0].classList.add('startanimation3');
+	setTimeout(removestartanime1,1000);
+	setTimeout(removestartanime2,1500);
+	setTimeout(removestartanime3,1400);
 
 
-//For beginning transition 
-function removestartanime1(){
-	image1[0].classList.remove('startanimation1');
+	//For beginning transition 
+	function removestartanime1(){
+		image1[0].classList.remove('startanimation1');
+	}
+	function removestartanime2(){
+		image2[0].classList.remove('startanimation2');
+	}
+
+	function removestartanime3(){
+		image3[0].classList.remove('startanimation3');
+	}
+};
+
+
+//forward button transition
+var i = 0;
+
+var indicator = document.getElementsByClassName('trasition_circle');
+var banner = document.getElementsByClassName('banner');
+var service_name = document.getElementsByClassName('service_name');
+var service_link = document.getElementsByClassName('service_link_url');
+var alpha1 = document.getElementsByClassName('alpha1');
+var alpha2 = document.getElementsByClassName('alpha2');
+var text_section = document.getElementsByClassName('service_info');
+
+var trigger_section_change_right = document.getElementsByClassName('transition_button_right');
+trigger_section_change_right[0].addEventListener('click',button_click_right);
+
+
+function button_click_right() {
+
+	if(i==0) {
+		i=2;
+	}
+
+	else {
+		i--;
+	}
+
+	change_circle_color();
+	alpha1[0].innerHTML = info[i].alphabet1;
+	alpha2[0].innerHTML = info[i].alphabet2;
+
+	image1[0].classList.add('animation1');
+	image2[0].classList.add('animation2');
+	image3[0].classList.add('animation3');
+
+	text_section[0].classList.add('text_animation');
+
+	setTimeout(removetextanime,1000);
+	setTimeout(text_animate,200);
+	setTimeout(picchange11,500);
+	setTimeout(picchange12,600);
+	setTimeout(picchange13,800);
+
+	setTimeout(removeanime1,1000);
+	setTimeout(removeanime2,1100);
+	setTimeout(removeanime3,1300);
+
+};
+
+
+function removetextanime() {
+text_section[0].classList.remove('text_animation');
 }
-function removestartanime2(){
-	image2[0].classList.remove('startanimation2');
+
+function picchange11() {
+	image1[0].style.backgroundImage= info[i].image1;
 }
 
-function removestartanime3(){
-	image3[0].classList.remove('startanimation3');
+function picchange12() {
+	image2[0].style.backgroundImage= info[i].image2;
 }
 
+function picchange13() {
+	image3[0].style.backgroundImage= info[i].image3;
+}	
 
-// For each transition
+function text_animate() {
+banner[0].innerHTML = info[i].banner;
+service_name[0].innerHTML = info[i].service;
+service_link[0].href = info[i].link;
+}
+
 function removeanime1(){
 	image1[0].classList.remove('animation1');
 }
@@ -75,138 +148,64 @@ function removeanime3(){
 	image3[0].classList.remove('animation3');
 }
 
+function change_circle_color() {
+
+	if(i==0) {
+		indicator[0].style.backgroundColor = '#048ba8';
+		indicator[1].style.backgroundColor = 'transparent';
+		indicator[2].style.backgroundColor = 'transparent';
+	}
+
+	else {
+		if(i==1) {
+			indicator[0].style.backgroundColor = 'transparent';
+			indicator[1].style.backgroundColor = '#048ba8';
+			indicator[2].style.backgroundColor = 'transparent';
+		}
+
+		else {
+			indicator[0].style.backgroundColor = 'transparent';
+			indicator[1].style.backgroundColor = 'transparent';
+			indicator[2].style.backgroundColor = '#048ba8';
+		}
+	}
+}
+
+var trigger_section_change_left = document.getElementsByClassName('transition_button_left');
+trigger_section_change_left[0].addEventListener('click',button_click_left);
+
+function button_click_left() {
+
+	if(i==2) {
+		i=0;
+	}
+
+	else {
+		i++;
+	}
 
 
-//trigger animation button 
-var trigger_section_change = document.getElementsByClassName('transition_button');
-trigger_section_change[0].addEventListener('click',button_click);
-
-function button_click() {
-
-	i++;
-	var indicator = document.getElementsByClassName('trasition_circle');
-	var banner = document.getElementsByClassName('banner');
-	var service_name = document.getElementsByClassName('service_name');
-	var service_link = document.getElementsByClassName('service_link_url');
-	var alpha1 = document.getElementsByClassName('alpha1');
-	var alpha2 = document.getElementsByClassName('alpha2');
-	var text_section = document.getElementsByClassName('service_info');
+	change_circle_color();
+	alpha1[0].innerHTML = info[i].alphabet1;
+	alpha2[0].innerHTML = info[i].alphabet2;
 
 	image1[0].classList.add('animation1');
 	image2[0].classList.add('animation2');
 	image3[0].classList.add('animation3');
 
 	text_section[0].classList.add('text_animation');
+
 	setTimeout(removetextanime,1000);
-
-	function removetextanime() {
-	text_section[0].classList.remove('text_animation');
-	}
-
-	if(i==1) {
-		indicator[0].style.backgroundColor = 'transparent';
-		indicator[1].style.backgroundColor = '#048ba8';
-		indicator[2].style.backgroundColor = 'transparent';
-		alpha1[0].innerHTML = info[1].alphabet1;
-		alpha2[0].innerHTML = info[1].alphabet2;
-
-		function picchange11() {
-			image1[0].style.backgroundImage= info[1].image1;
-		}
-
-		function picchange12() {
-			image2[0].style.backgroundImage= info[1].image2;
-		}
-
-		function picchange13() {
-			image3[0].style.backgroundImage= info[1].image3;
-		}	
-
-		function text_animate() {
-		banner[0].innerHTML = info[1].banner;
-		service_name[0].innerHTML = info[1].service;
-		service_link[0].href = info[1].link;
-		}
-
-		setTimeout(text_animate,200);
-		setTimeout(picchange11,500);
-		setTimeout(picchange12,600);
-		setTimeout(picchange13,800);
-	}
-
-	else if(i==2) {
-		indicator[0].style.backgroundColor = 'transparent';
-		indicator[1].style.backgroundColor = 'transparent';
-		indicator[2].style.backgroundColor = '#048ba8';
-		alpha1[0].innerHTML = info[2].alphabet1;
-		alpha2[0].innerHTML = info[2].alphabet2;
-
-		function picchange21() {
-			image1[0].style.backgroundImage= info[2].image1;
-		};
-
-		function picchange22() {
-			image2[0].style.backgroundImage= info[2].image2;
-		};
-
-		function picchange23() {
-			image3[0].style.backgroundImage= info[2].image3;
-		};		
-
-		function text_animate() {
-		banner[0].innerHTML = info[2].banner;
-		service_name[0].innerHTML = info[2].service;
-		service_link[0].href = info[2].link;
-		}
-
-		setTimeout(text_animate,500);
-		setTimeout(picchange21,500);
-		setTimeout(picchange22,600);
-		setTimeout(picchange23,800);
-		i= -1;
-	}
-
-	else if(i==0) {
-		indicator[0].style.backgroundColor = '#048ba8';
-		indicator[1].style.backgroundColor = 'transparent';
-		indicator[2].style.backgroundColor = 'transparent';
-
-		image1[0].style.backgroundImage = info[0].image1;
-		image2[0].style.backgroundImage = info[0].image2;
-		image3[0].style.backgroundImage = info[0].image3;
-		alpha1[0].innerHTML = info[0].alphabet1;
-		alpha2[0].innerHTML = info[0].alphabet2;
-
-		function picchange01() {
-			image1[0].style.backgroundImage= info[0].image1;
-		};
-
-		function picchange02() {
-			image2[0].style.backgroundImage= info[0].image2;
-		};
-
-		function picchange03() {
-			image3[0].style.backgroundImage= info[0].image3;
-		};	
-
-		function text_animate() {
-		banner[0].innerHTML = info[0].banner;
-		service_name[0].innerHTML = info[0].service;
-		service_link[0].href = info[0].link;
-		}
-
-		setTimeout(text_animate,500);
-		setTimeout(picchange01,500);
-		setTimeout(picchange02,700);
-		setTimeout(picchange03,800);
-	}
+	setTimeout(text_animate,200);
+	setTimeout(picchange11,500);
+	setTimeout(picchange12,600);
+	setTimeout(picchange13,800);
 
 	setTimeout(removeanime1,1000);
 	setTimeout(removeanime2,1100);
 	setTimeout(removeanime3,1300);
 
-}	
-
+}
 
 // Text Appear Animation
 window.addEventListener("scroll", scrollmove);

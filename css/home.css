@@ -257,20 +257,21 @@ when the website opens)*/
 }
 
 .transition_button {
-	border-radius: 50%;
 	border: none;
-	padding: 10px 19px;
 	cursor: pointer;
+	background-color: transparent;
 }
 
-.fa-chevron-right {
-	font-size: 40px;
-	color: white;
+.fa-chevron-right, .fa-chevron-left {
+	font-size: 50px;
+	color: #048ba8;
 	cursor: pointer;
+	padding: 0;
+	margin: 0;
 }
 
-.transition_button:active {
-	border-bottom: 2px solid grey; 
+.fa-chevron-right:hover, .fa-chevron-left:hover {
+	opacity: 0.8;
 }
 
 .transition_button:focus {
@@ -537,6 +538,29 @@ when the website opens)*/
 	}
 }
 
+.landing_page_bg {
+	position: relative;
+}
+
+.bg_div_LP {
+	position: absolute;
+	top: -20%;
+	z-index: -10;
+	height: 130%;
+	width: 100%;
+	background-color: transparent;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.inside_bg_div_LP {
+	height: 100%;
+	width: 100vh;
+	background-image: url('../images/section_bg.jpg');
+	background-size: 100% 100%;
+}
 
 .tagline {
 	height: 40vh;
@@ -610,8 +634,7 @@ when the website opens)*/
 
 /*About or what we do*/
 
-.about {
-	font-family: 'Leelawadee UI'; 
+.about { 
 	font-size: 16px;
 	font-weight: bold;
 	height: 100vh; 
@@ -834,7 +857,7 @@ when the website opens)*/
 	font-size: 100px;
 	line-height: 80px;
 	color: transparent;
-	-webkit-text-stroke: 3px white;
+	-webkit-text-stroke: 1px white;
 }
 
 .good_at_this {
