@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+
+	.introduceIF {
+		height: auto;
+	}
+
+	.content_IF {
+		position: static;
+		transform: translate(0%,0%);
+		width: 100%;
+		padding: 10% 5%;
+	}
+
+	.content_IF p:nth-child(1), .content_IF p:nth-child(2) {
+		font-size: 4rem;
+		margin: 0%;
+		line-height: 3.8rem;
+	}
+
+	.intro_content_IF {
+		transform: translate(0%,0%);
+		text-align: left;
+	}
+
+	.PM_flex {
+		justify-content: center;
+	}
+
+	.PM_flex_box {
+		height: 270px;
+		width: 270px;
+		margin: 10%; 
+	}
+}

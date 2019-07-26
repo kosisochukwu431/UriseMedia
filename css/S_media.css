@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px) {
+	.hamberger_line {
+		background-color: black;
+	}
+
+	.introduceIF {
+		padding: 20% 5%;
+		height: auto;
+	}
+
+	.content_IF {
+		position: static;
+		transform: translate(0%,0%);
+	}
+
+	.content_IF p:nth-child(1), .content_IF p:nth-child(2)  {
+		font-size: 60px;
+		position: static;
+		line-height: 50px;
+	}
+
+	.contentline_IF1 {
+		width: 100%;
+		margin: 10% 0%;
+	}
+
+	.intro_content_IF {
+		width: 200%;
+		text-align: left;
+		margin-top: 25%;
+		margin-left: 10%;
+		transform: translate(0%,0%);
+	}
+
+	.strategy_layout {
+		display: grid;
+		height: 2300px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		"box1 box1"
+		"box1 box1"
+		"box3 box4"
+		"box2 box2"
+		"box14 box6"
+		"box5 box5"
+		"box7 box7"
+		"box7 box7"
+		"box8 box9"
+		"box11 box11"
+		"box15 box10"
+		"box12 box12"
+		"box13 box13"
+		"box13 box13";
+		padding: 0% 10% 10% 10%;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px; 
+		color: #91989e;
+	}
+
+	.strategy_descrp {
+		width: 100%;
+	}
+}

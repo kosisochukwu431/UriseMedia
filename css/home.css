@@ -544,9 +544,9 @@ when the website opens)*/
 
 .bg_div_LP {
 	position: absolute;
-	top: -20%;
+	top: 0%;
 	z-index: -10;
-	height: 130%;
+	height: 120%;
 	width: 100%;
 	background-color: transparent;
 	display: none;
@@ -558,7 +558,7 @@ when the website opens)*/
 .inside_bg_div_LP {
 	height: 100%;
 	width: 100vh;
-	background-image: url('../images/section_bg.jpg');
+	background-image: url('../images/pathroad.jpg');
 	background-size: 100% 100%;
 }
 

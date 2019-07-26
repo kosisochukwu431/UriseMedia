@@ -1,3 +1,4 @@
+
 .intro_content_IF {
 	width: 90%;
 }
@@ -6,13 +7,21 @@
 	display: flex;
 	padding: 5% 7%;
 	background-color: transparent;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
 .PM_flex_box {
-	width: 270px; 
-	height:270px;
+	width: 220px; 
+	height:220px;
+	margin: 2%;
+	box-shadow: 10px 10px 30px grey;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	text-align: center;
+	color: white;
 }
 
 .PM_flex_box1 {

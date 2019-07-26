@@ -1,5 +1,6 @@
 html {
 	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
@@ -29,6 +30,7 @@ nav {
 	background-color: black; 
 	font-size: 15px;
 	font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .aboutIF {
@@ -54,7 +56,7 @@ nav {
 	line-height: 90px;
 	margin-top: 0;
 	margin-bottom: 0;
-	-webkit-text-stroke: 2px #ea7a7f;
+	-webkit-text-stroke: 1px #ea7a7f;
 }
 
 .content_IF p:nth-child(2) {
@@ -62,7 +64,7 @@ nav {
 	color: transparent;
 	line-height: 90px;
 	margin: 0 0 0 40%; 
-	-webkit-text-stroke: 2px white;
+	-webkit-text-stroke: 1px white;
 }
 
 .contentline_IF1 {
@@ -329,15 +331,15 @@ nav {
 }
 
 .name_first_alpha2, .name_first_alpha4, .name_first_alpha7, .name_first_alpha10 {
-	color: #2e4057;
+	color: #048ba8;
 }
 
 .name_div2, .name_div4, .name_div7, .name_div10 {
-	color: #2e4057;
+	color: #048ba8;
 }
 
 .contentline_name2, .contentline_name4, .contentline_name7, .contentline_name10 {
-	background-color: #2e4057;
+	background-color: #048ba8;
 }
 
 .name_first_alpha3, .name_first_alpha6, .name_first_alpha9 {

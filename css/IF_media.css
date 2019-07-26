@@ -15,7 +15,7 @@
 	}
 
 	.content_IF p:nth-child(1), .content_IF p:nth-child(2)  {
-		font-size: 60px;
+		font-size: 50px;
 		position: static;
 		line-height: 50px;
 	}
@@ -35,7 +35,8 @@
 
 	.featured p {
 		font-size: 36px;
-		line-height: 50px;
+		height: auto;
+		width: 70%;
 	}
 
 	.multiuse_circle_influencers {
@@ -81,7 +82,7 @@
 	.name_first_alpha {
     	font-size: 200px;
     	position: static;
-    	margin: 20% 5%; 
+    	margin: 35% 10%; 
 	}
 
 	.name_first_alpha:nth-child(even) {
@@ -103,7 +104,7 @@
 	}
 
 	.name_div1, .name_div3, .name_div5, .name_div7, .name_div9, .name_div11 {
-		margin: 32% 60%;
+		margin: 30% 60%;
 	}
 
 	.name_div:first-child {

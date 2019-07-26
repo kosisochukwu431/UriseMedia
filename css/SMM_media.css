@@ -1,15 +1,41 @@
 @media screen and (max-width: 768px) {
 	.introduceSMM {
-		height: 1000px;
+		height: auto;
 	}
 
 	.SMM_heading {
-		top: 2%;
+		position: static;
 		text-align: left;
-		left: 2%;
+		padding: 5%;
 	}
 
 	.SMM_heading p {
-		font-size: 70px;
+		font-size: 3rem;
+		line-height: 3rem;		
+	}
+
+	.SMM_info p {
+		width: 100%;
+		position: static;
+		font-size: 1rem;
+		line-height: 1.1rem;
+		padding: 5%;
+	}
+
+	.SMM_info_bg_div {
+		position: static;
+		height: 300px;
+		width: 100vw;
+	}
+
+	.SMM_numbers {
+		height: auto;
+		width: auto;
+		left: 5%;
+		top: 10%;		
+	}
+
+	.SMM_number1 {
+		font-size: 15rem;
 	}
 }
